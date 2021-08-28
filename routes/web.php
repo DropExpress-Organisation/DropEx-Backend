@@ -1,6 +1,7 @@
 <?php
-
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\mpesa\MPESAController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,4 +16,12 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::post('register-urls', [MPESAController::class, 'registerURLS']);
+Route::post('get-token', [MPESAController::class, 'getAccessToken']);
+Route::post('stkpush', [MPESAController::class, 'stkPush']);
+
+Route::get('stk', function(){
+    return view('stk');
 });
