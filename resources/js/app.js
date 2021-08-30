@@ -43,3 +43,24 @@ document.getElementById('stkpush').addEventListener('click', (event) => {
         console.log(error);
     })
 })
+
+// document.getElementById('sendSMS').addEventListener('click', (event) => {
+//     event.preventDefault()
+
+//     const requestBody = {
+//         phone: document.getElementById('phone').value,
+//         message: document.getElementById('message').value,
+//     }
+
+//     axios.post('api/v1/sms', requestBody)
+//     .then((response) => {
+//         if(response.data.ResponseDescription){
+//             document.getElementById('twilio_response').innerHTML = response.data.ResponseDescription
+//         } else {
+//             document.getElementById('twilio_response').innerHTML = response.data.errorMessage
+//         }
+//     })
+//     .catch((error) => {
+//         console.log(error);
+//     })
+// })

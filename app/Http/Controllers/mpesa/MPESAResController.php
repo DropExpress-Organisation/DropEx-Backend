@@ -40,5 +40,5 @@ class MPESAResController extends Controller
             'ThirdPartyTransID' => rand(3000, 10000)
         ];
     }
-    
+
 }
